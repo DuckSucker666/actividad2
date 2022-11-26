@@ -1,0 +1,22 @@
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {FooterComponent} from './footer.component';
+
+describe('FooterComponent', () => {
+    let Component: FooterComponent;
+    let fixture: ComponentFixture<FooterComponent>;
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [FooterComponent]
+        })
+        .compileComponents();
+    }));
+    beforeEach(() => {
+        fixture = TestBed.createComponent(FooterComponent);
+        Component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
+    it('should create', () => {
+        expect(Component).toBeTruthy();
+    });
+
+})
